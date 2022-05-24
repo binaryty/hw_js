@@ -22,11 +22,13 @@
         */
 
         let number = Number(prompt("Введите количество денег, которое вы хотите оложить на счет в банк:"));
+        let end = number % 10;
+        let preend = parseInt(number / 10) % 10
+
         if (!isNaN(number) && isFinite(number)) {
-            if (number >= 11 && number <= 14) {
+            if (number >= 11 && number <= 14 || preend === 1) {
             alert("Ваша сумма в " + number + " рублей успешно зачислена.");
             } else {
-                let end = number % 10;
                 if(end === 1) {
                     alert("Ваша сумма в " + number + " рубль успешно зачислена.");
                 } else if(end > 1 && end <= 4) {
