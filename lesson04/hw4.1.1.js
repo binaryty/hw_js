@@ -11,7 +11,7 @@ Product.prototype.make25PercentDiscount = function () {
 };
 
 //es6
-class newProduct{
+class NewProduct{
     constructor(name, price) {
         this.name = name;
         this.price = price;
@@ -24,7 +24,7 @@ class newProduct{
 
 
 const p1 = new Product('Ноутбук', 34500);
-const p2 = new newProduct('Кроссовки', 4599);
+const p2 = new NewProduct('Кроссовки', 4599);
 console.log(p1);
 console.log(p2);
 console.log('Распродажа -25%');

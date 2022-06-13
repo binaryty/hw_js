@@ -6,7 +6,7 @@ function Post(author, text, date) {
   this.date = date;
 }
 
-Post.prototype.Edit = function(text) {
+Post.prototype.edit = function(text) {
  this.text = text; 
 }
 
@@ -27,8 +27,8 @@ let p = new Post('Alex', 'ES5', '31-05-2022');
 let a = new AttachedPost('Adam', 'Lorem ipsum', '31-05-2022');
 console.log(p);
 console.log(a);
-p.Edit('ES5 Edit');
-a.Edit('Lorem ipsum dolor');
+p.edit('ES5 Edit');
+a.edit('Lorem ipsum dolor');
 console.log(p);
 console.log(a);
 
@@ -42,7 +42,7 @@ class AmazingPost{
     this.text = text;
     this.date = date;
   }
-  Edit(text) {
+  edit(text) {
     this.text = text;
   }
 }
@@ -61,8 +61,8 @@ let p1 = new AmazingPost('User1', 'New post', '01-06-2022');
 let a1 = new AmazingAttachedPost('User2', 'Newest post', '01-06-2022');
 console.log(p1);
 console.log(a1);
-p1.Edit('New post edited ES6');
-a1.Edit('Newest post edited ES6');
+p1.edit('New post edited ES6');
+a1.edit('Newest post edited ES6');
 console.log(p1);
 console.log(a1);
 a1.makeTextHighlighted();
