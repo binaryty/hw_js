@@ -41,8 +41,6 @@
         let inputs = document.querySelectorAll('input');
 
         formEl.addEventListener('submit', function(event) {
-            let target = event.target;
-
             inputs.forEach(input => {
                 if (input.value === "") {
                     input.style.borderColor = 'red';
